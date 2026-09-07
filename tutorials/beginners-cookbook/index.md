@@ -112,7 +112,10 @@ native JavaScript object so that Google's servers can perform operations on it.
 Map.setCenter(long, lat, zoomLevel);
 ```
 
-> Zoom level varies from 0 (no zoom) to 20 (highest zoom level)
+> Zoom level varies from 0 (no zoom) to 20 (highest zoom level). If you've a geometry already, use
+```javascript
+Map.centerObject(geom, zoomLevel)
+```
 
 ### Displaying metadata
 
